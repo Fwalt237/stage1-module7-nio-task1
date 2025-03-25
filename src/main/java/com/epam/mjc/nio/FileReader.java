@@ -20,7 +20,7 @@ public class FileReader {
             String[] phone = lines.get(3).split(": ");
             return new Profile(name[1], Integer.valueOf(age[1]), email[1], Long.valueOf(phone[1]));
 
-        } catch (IOException e) {
+        } catch (IOException e) { // Updated by changing this RuntimeException to IOException
             throw new RuntimeException(e);
         }
 
